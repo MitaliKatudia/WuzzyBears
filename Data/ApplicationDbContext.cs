@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+using WuzzyBears.Models;
 
 namespace WuzzyBears.Data
 {
@@ -12,5 +13,6 @@ namespace WuzzyBears.Data
             : base(options)
         {
         }
+        public DbSet<WuzzyBears.Models.WuzzyBear> WuzzyBear { get; set; }
     }
 }

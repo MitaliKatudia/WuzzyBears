@@ -58,3 +58,17 @@ Added a new method in HelloWorldController to View Data
 Tested the application with Different names and numbers... URL: https://localhost:44311/HelloWorld/Welcome?name=Mitali&numTimes=4
 Works Perfect....
 Completed Part 3 of the Application 09:05pm.
+
+---------------------------------------------------------------------------------------------
+
+2022-10-10, 02:17pm
+Part 4 of Application - Add a Model
+Added a new Class in Models called WuzzyBear.cs
+Defined properties to be displayed in the database. 
+TeddyId, TeddySerialNumbr, TypeOfTeddy, MaterialOfTeddy, ManufacureDate, SizeOfTeddy, CostOfTeddy
+These are the suitable propertes to display a list of Teddy Bears according to me....lol
+Created a database context class WuzzyBearContext.cs in Data and modified the content according to my application names
+Registered the database with dependency injection in startup.cs
+Setted the database connection string in appsettings.json by replacing default connection to WuzzyBearContext
+Tried Scaffolding the controller with option WuzzyBears.Data.WuzzyBearContext....
+It shows error of a Parameterless argument and a no parameter less contructor defined..,commiting all changes for now
