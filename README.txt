@@ -41,3 +41,20 @@ Tested the Application again.. eveything good....
 Committed the changes.....uff that was difficult....please dont go wrong again..
 Finished Part 2 of Application
 Closing the Application for now.... 2022-10-08, 07:44pm
+
+---------------------------------------------------------------------------------------------
+
+2022-10-09, 07:50pm
+Rebuilt the project and tested it....everything looks good
+
+Part 3 of Application - Add a View
+Changed Action method in HelloWorldController.cs
+Created a new folder - HelloWorld in Views folder and added an Index.cshtml file
+Defined content to display from this template. This goes in the HelloWorldController.cs method and then it call out from here.
+Modified the Naming conventions in Views/Shared/_Layout.cshtml to change titles suitable for the Application
+Tested the app.... Looks nice...
+Took a Tea Break...... :)
+Added a new method in HelloWorldController to View Data
+Tested the application with Different names and numbers... URL: https://localhost:44311/HelloWorld/Welcome?name=Mitali&numTimes=4
+Works Perfect....
+Completed Part 3 of the Application 09:05pm.

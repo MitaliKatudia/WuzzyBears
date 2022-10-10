@@ -17,9 +17,12 @@ namespace WuzzyBears.Controllers
         // 
         // GET: /HelloWorld/
 
-        public string Index()
+        //public string Index()
+        public IActionResult Index()
         {
-            return "This is my default action...";
+            // return "This is my default action...";
+
+            return View();
         }
 
         /* 
@@ -37,9 +40,15 @@ namespace WuzzyBears.Controllers
             return HtmlEncoder.Default.Encode($"Hello {name}, NumTimes is: {numTimes}");
         }  */
 
-        public string Welcome(string name, int ID = 1)
+        //public string Welcome(string name, int ID = 1)
+
+        public IActionResult Welcome(string name, int numTimes = 1)
         {
-            return HtmlEncoder.Default.Encode($"Hello {name}, ID: {ID}");
+            ViewData["Message"] = "Hello " + name;
+            ViewData["NumTimes"] = numTimes;
+
+            return View();
+            //return HtmlEncoder.Default.Encode($"Hello {name}, ID: {ID}");
         }
     }
 }
