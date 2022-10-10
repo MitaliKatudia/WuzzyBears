@@ -1,0 +1,59 @@
+﻿@model WuzzyBears.Models.WuzzyBear
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>WuzzyBear</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Id" />
+            <div class="form-group">
+                <label asp-for="TeddySerialNumber" class="control-label"></label>
+                <input asp-for="TeddySerialNumber" class="form-control" />
+                <span asp-validation-for="TeddySerialNumber" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TypeOfTeddy" class="control-label"></label>
+                <input asp-for="TypeOfTeddy" class="form-control" />
+                <span asp-validation-for="TypeOfTeddy" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MaterialOfTeddy" class="control-label"></label>
+                <input asp-for="MaterialOfTeddy" class="form-control" />
+                <span asp-validation-for="MaterialOfTeddy" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Manufactured" class="control-label"></label>
+                <input asp-for="Manufactured" class="form-control" />
+                <span asp-validation-for="Manufactured" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SizeOfTeddy" class="control-label"></label>
+                <input asp-for="SizeOfTeddy" class="form-control" />
+                <span asp-validation-for="SizeOfTeddy" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CostOfTeddy" class="control-label"></label>
+                <input asp-for="CostOfTeddy" class="form-control" />
+                <span asp-validation-for="CostOfTeddy" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

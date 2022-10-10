@@ -70,5 +70,19 @@ These are the suitable propertes to display a list of Teddy Bears according to m
 Created a database context class WuzzyBearContext.cs in Data and modified the content according to my application names
 Registered the database with dependency injection in startup.cs
 Setted the database connection string in appsettings.json by replacing default connection to WuzzyBearContext
+
 Tried Scaffolding the controller with option WuzzyBears.Data.WuzzyBearContext....
 It shows error of a Parameterless argument and a no parameter less contructor defined..,commiting all changes for now
+I need 10 mins to refresh myself....uffff
+Tried scaffolding the data context with ApplicationDbContext
+Another error found was a primary key not defined.. might be because I used TeddyId
+Changed the property to Id and it worked.... 
+okayy? that was weird... according to me that should not be a problem...
+The scaffolding added new folder WuzzyBears with new foiles to CRUD Pages
+Initiated Migration by Tools > NuGet Package Manager > Package Manager Console
+Added code--> Add-Migration InitialCreate.....showed error and asked to specify the database context
+Tried again with--> Add-Migration InitialCreate -Context ApplicationDbContext
+Updated database with--> Updated-Database -Context ApplicationDbContext
+Examined newly created pages and compared them with the MvcMovie Tutorial....
+Tested the Application and clicked the WuzzyBears App link... showed database row and columns.....
+This was the longest Part till now... Ended at 04:50pm
