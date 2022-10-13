@@ -20,9 +20,54 @@ namespace WuzzyBears.Controllers
         }
 
         // GET: WuzzyBears
-        public async Task<IActionResult> Index()
+        /*public async Task<IActionResult> Index(string searchString)
         {
-            return View(await _context.WuzzyBear.ToListAsync());
+            //return View(await _context.WuzzyBear.ToListAsync());
+            var Bears = from m in _context.WuzzyBear
+                         select m;
+
+            if (!String.IsNullOrEmpty(searchString))
+            {
+                Bears = Bears.Where(s => s.TypeOfTeddy.Contains(searchString));
+            }
+
+            return View(await Bears.ToListAsync());
+        }*/
+
+        // GET: WuzzyBears
+        public async Task<IActionResult> Index(string TeddyMaterial, string searchString)
+        {
+            // Use LINQ to get list of genres.
+            IQueryable<string> materialQuery = from m in _context.WuzzyBear
+                                            orderby m.MaterialOfTeddy
+                                            select m.MaterialOfTeddy;
+
+            var TeddyBears = from m in _context.WuzzyBear
+                         select m;
+
+            if (!string.IsNullOrEmpty(searchString))
+            {
+                TeddyBears = TeddyBears.Where(s => s.MaterialOfTeddy.Contains(searchString));
+            }
+
+            if (!string.IsNullOrEmpty(TeddyMaterial))
+            {
+                TeddyBears = TeddyBears.Where(x => x.MaterialOfTeddy == TeddyMaterial);
+            }
+
+            var wuzzyBearMaterialVM = new WuzzyBearMaterialViewModel
+            {
+                Materials = new SelectList(await materialQuery.Distinct().ToListAsync()),
+                WuzzyBears = await TeddyBears.ToListAsync()
+            };
+
+            return View(wuzzyBearMaterialVM);
+        }
+
+        [HttpPost]
+        public string Index(string searchString, bool notUsed)
+        {
+            return "From [HttpPost]Index: filter on " + searchString;
         }
 
         // GET: WuzzyBears/Details/5

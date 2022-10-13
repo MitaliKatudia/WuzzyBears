@@ -99,3 +99,26 @@ Will try running again after adding command to update database
 The application now shows my seeded data in the database...
 Finished Part 5 of the Tutorial
 Gonna get some sleep now.... Ended at 12:40am
+
+---------------------------------------------------------------------------------------------
+2022-10-13, 12:12pm
+
+Starting Part 6 of Application - Controller Methods and Views
+Not gonna repeat the mistake from yesterday night and UPDATE THE DATABASE FIRSTTTT.....
+Modified the names of the columns from pascal Casing to display a different name.
+Examined and did changes in files where necessary according to my company name and previously defined variables
+Run the application.... everything works fine
+Commpleted Part 6 Of the Application....12:45pm
+
+Started Part 7 of Application - Add Search Button
+Updated the IActionResult method in WuzzyBears Controller to when someone passes a string in URl to Search....
+Played with the method with different properties to search from.... URl:
+Everytime it is not convenient for user to type such URl....honestly its frustrating
+Added a form in Views/WuzzyBears/Index.cshtml so that the user can use it as a search button and filter accordingly...
+Ran the application and tried different strings to search the Types of Teddy Bears Available...
+Added a new class for Model for search component called WuzzyBearMaterialViewModel.cs
+Changed some Variable names suitable and modified Index method in wuzzy bears controller.....
+It was confusing to change all variables and properties to match from both controllers and Models...
+Added the model in Index.cshtml to add search by material to Index View
+Lets run the application.....works perfect...
+Finished Part 7 of Application....Gotta go to College for lec... ended at 02:35pm

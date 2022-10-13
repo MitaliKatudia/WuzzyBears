@@ -1,4 +1,4 @@
-﻿@model IEnumerable<WuzzyBears.Models.WuzzyBear>
+﻿@model WuzzyBears.Models.WuzzyBearMaterialViewModel
 
 @{
     ViewData["Title"] = "Index";
@@ -9,57 +9,67 @@
 <p>
     <a asp-action="Create">Create New</a>
 </p>
+<form asp-controller="WuzzyBears" asp-action="Index" method="get">
+    <p>
+        <select asp-for="TeddyMaterial" asp-items="Model.Materials">
+            <option value="">All</option>
+        </select>
+        Teddy Bear Type: <input type="text" asp-for="SearchString" />
+        <input type="submit" value="Filter" />
+    </p>
+</form>
 <table class="table">
     <thead>
         <tr>
             <th>
-                @Html.DisplayNameFor(model => model.TeddySerialNumber)
+                @Html.DisplayNameFor(model => model.WuzzyBears[0].TeddySerialNumber)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.TypeOfTeddy)
+                @Html.DisplayNameFor(model => model.WuzzyBears[0].TypeOfTeddy)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.MaterialOfTeddy)
+                @Html.DisplayNameFor(model => model.WuzzyBears[0].MaterialOfTeddy)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Manufactured)
+                @Html.DisplayNameFor(model => model.WuzzyBears[0].Manufactured)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.SizeOfTeddy)
+                @Html.DisplayNameFor(model => model.WuzzyBears[0].SizeOfTeddy)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.CostOfTeddy)
+                @Html.DisplayNameFor(model => model.WuzzyBears[0].CostOfTeddy)
             </th>
             <th></th>
         </tr>
     </thead>
     <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.TeddySerialNumber)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.TypeOfTeddy)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.MaterialOfTeddy)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Manufactured)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.SizeOfTeddy)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.CostOfTeddy)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
-            </td>
-        </tr>
-}
+        @foreach (var item in Model.WuzzyBears)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.TeddySerialNumber)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.TypeOfTeddy)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.MaterialOfTeddy)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Manufactured)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.SizeOfTeddy)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CostOfTeddy)
+                </td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                    <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                    <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                </td>
+            </tr>
+        }
     </tbody>
 </table>
