@@ -99,7 +99,7 @@ namespace WuzzyBears.Controllers
         // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,TeddySerialNumber,TypeOfTeddy,MaterialOfTeddy,Manufactured,SizeOfTeddy,CostOfTeddy")] WuzzyBear wuzzyBear)
+        public async Task<IActionResult> Create([Bind("Id,TeddySerialNumber,TypeOfTeddy,MaterialOfTeddy,Manufactured,SizeOfTeddy,CostOfTeddy,CustomerRating")] WuzzyBear wuzzyBear)
         {
             if (ModelState.IsValid)
             {
@@ -131,7 +131,7 @@ namespace WuzzyBears.Controllers
         // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,TeddySerialNumber,TypeOfTeddy,MaterialOfTeddy,Manufactured,SizeOfTeddy,CostOfTeddy")] WuzzyBear wuzzyBear)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,TeddySerialNumber,TypeOfTeddy,MaterialOfTeddy,Manufactured,SizeOfTeddy,CostOfTeddy,CustomerRating")] WuzzyBear wuzzyBear)
         {
             if (id != wuzzyBear.Id)
             {

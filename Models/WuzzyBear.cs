@@ -30,5 +30,8 @@ namespace WuzzyBears.Models
         [Display(Name = "Cost Of Teddy Bear")]
         [Column(TypeName = "decimal(18, 2)")]
         public decimal CostOfTeddy { get; set; }
+
+        [Range(1, 5)]
+        public int CustomerRating { get; set; }
     }
 }

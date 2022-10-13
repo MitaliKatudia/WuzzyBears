@@ -31,7 +31,8 @@ namespace WuzzyBears.Models
                         MaterialOfTeddy = "Soft Foam",
                         Manufactured = DateTime.Parse("2022-5-20"),
                         SizeOfTeddy = 50,
-                        CostOfTeddy = 14.99M
+                        CostOfTeddy = 14.99M,
+                        CustomerRating = 5
                     },
 
                     new WuzzyBear
@@ -41,7 +42,8 @@ namespace WuzzyBears.Models
                         MaterialOfTeddy = "Cotton Foam",
                         Manufactured = DateTime.Parse("2022-3-14"),
                         SizeOfTeddy = 25,
-                        CostOfTeddy = 7.99M
+                        CostOfTeddy = 7.99M,
+                        CustomerRating = 3
                     },
 
                     new WuzzyBear
@@ -51,7 +53,8 @@ namespace WuzzyBears.Models
                         MaterialOfTeddy = "Thermofoam Beeds",
                         Manufactured = DateTime.Parse("2022-6-02"),
                         SizeOfTeddy = 75,
-                        CostOfTeddy = 12.99M
+                        CostOfTeddy = 12.99M,
+                        CustomerRating = 4
                     },
 
                     new WuzzyBear
@@ -61,7 +64,8 @@ namespace WuzzyBears.Models
                         MaterialOfTeddy = "Cotton Balls",
                         Manufactured = DateTime.Parse("2022-1-28"),
                         SizeOfTeddy = 30,
-                        CostOfTeddy = 9.99M
+                        CostOfTeddy = 9.99M,
+                        CustomerRating = 4
                     },
 
                     new WuzzyBear
@@ -71,7 +75,8 @@ namespace WuzzyBears.Models
                         MaterialOfTeddy = "Soft Foam",
                         Manufactured = DateTime.Parse("2022-2-17"),
                         SizeOfTeddy = 15,
-                        CostOfTeddy = 6.99M
+                        CostOfTeddy = 6.99M,
+                        CustomerRating = 2
                     },
 
                     new WuzzyBear
@@ -81,7 +86,8 @@ namespace WuzzyBears.Models
                         MaterialOfTeddy = "Soft Foam",
                         Manufactured = DateTime.Parse("2021-10-02"),
                         SizeOfTeddy = 20,
-                        CostOfTeddy = 8.99M
+                        CostOfTeddy = 8.99M,
+                        CustomerRating = 3
                     },
 
                     new WuzzyBear
@@ -91,7 +97,8 @@ namespace WuzzyBears.Models
                         MaterialOfTeddy = "Cotton Foam",
                         Manufactured = DateTime.Parse("2022-07-30"),
                         SizeOfTeddy = 35,
-                        CostOfTeddy = 7.99M
+                        CostOfTeddy = 7.99M,
+                        CustomerRating = 2
                     },
 
                     new WuzzyBear
@@ -101,7 +108,8 @@ namespace WuzzyBears.Models
                         MaterialOfTeddy = "Cotton Foam",
                         Manufactured = DateTime.Parse("2021-12-22"),
                         SizeOfTeddy = 25,
-                        CostOfTeddy = 6.49M
+                        CostOfTeddy = 6.49M,
+                        CustomerRating = 3
                     },
 
                     new WuzzyBear
@@ -111,7 +119,8 @@ namespace WuzzyBears.Models
                         MaterialOfTeddy = "Thermofoam Beeds",
                         Manufactured = DateTime.Parse("2021-6-07"),
                         SizeOfTeddy = 50,
-                        CostOfTeddy = 7.99M
+                        CostOfTeddy = 7.99M,
+                        CustomerRating = 5
                     },
 
                     new WuzzyBear
@@ -131,7 +140,8 @@ namespace WuzzyBears.Models
                         MaterialOfTeddy = "Cotton Foam",
                         Manufactured = DateTime.Parse("2022-5-27"),
                         SizeOfTeddy = 40,
-                        CostOfTeddy = 10.99M
+                        CostOfTeddy = 10.99M,
+                        CustomerRating = 4
                     }
                 );
                 context.SaveChanges();

@@ -122,3 +122,16 @@ It was confusing to change all variables and properties to match from both contr
 Added the model in Index.cshtml to add search by material to Index View
 Lets run the application.....works perfect...
 Finished Part 7 of Application....Gotta go to College for lec... ended at 02:35pm
+
+---------------------------------------------------------------------------------------------
+2022-10-13, 04:45pm
+
+Started Part 8 of Application - Add a New Field
+Added a new Integer property called CustomerRating in WuzzyBear.cs
+Binded the new property in Create and Edit methods, added new rows and other thins needed in Index.cshtml
+Added the new Property for every WuzzyBear in SeedData.cs
+Ran command Add-Migration CustomerRange -Context ApplicationDbContext
+Showed the following Warning -- An operation was scaffolded that may result in the loss of data. Please review the migration for accuracy.
+Updated the Database with command -- Update-Database -Context ApplicationDbContext
+Started the application again.....Everything went well but the data I updated in SeedData.cs did not show.
+Closing the application and starting it again....
