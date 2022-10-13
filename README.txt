@@ -14,7 +14,6 @@ Build the application again and tried to test it.
 Displayed the title correctly... Completed Part 1 of the Tutorial.
 
 ---------------------------------------------------------------------------------------------
-
 Part 2 of Application - Add a Controller
 
 Added a new controller called HelloWorld in Controllers folder.
@@ -43,7 +42,6 @@ Finished Part 2 of Application
 Closing the Application for now.... 2022-10-08, 07:44pm
 
 ---------------------------------------------------------------------------------------------
-
 2022-10-09, 07:50pm
 Rebuilt the project and tested it....everything looks good
 
@@ -60,8 +58,8 @@ Works Perfect....
 Completed Part 3 of the Application 09:05pm.
 
 ---------------------------------------------------------------------------------------------
-
 2022-10-10, 02:17pm
+
 Part 4 of Application - Add a Model
 Added a new Class in Models called WuzzyBear.cs
 Defined properties to be displayed in the database. 
@@ -86,3 +84,18 @@ Updated database with--> Updated-Database -Context ApplicationDbContext
 Examined newly created pages and compared them with the MvcMovie Tutorial....
 Tested the Application and clicked the WuzzyBears App link... showed database row and columns.....
 This was the longest Part till now... Ended at 04:50pm
+
+---------------------------------------------------------------------------------------------
+2022-10-12, 11:24pm
+
+Ahh...had a long day with javascript midterm and other php assignment....had a good score in today's exam...:)
+Part 5 of Application - Seed the Database
+Edited some connection database in Startup.cs and appsettings.json
+Created a class called SeedData.cs and added some Data to load in the database
+Initialized seed in Program.cs by replacing some content.
+Lets rebild the project...and run the application
+Oooppppss... forgot to update the database
+Will try running again after adding command to update database
+The application now shows my seeded data in the database...
+Finished Part 5 of the Tutorial
+Gonna get some sleep now.... Ended at 12:40am

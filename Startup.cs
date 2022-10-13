@@ -35,8 +35,8 @@ namespace WuzzyBears
             services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
                 .AddEntityFrameworkStores<ApplicationDbContext>();
             services.AddControllersWithViews();
-           // services.AddDbContext<WuzzyBearContext>(options =>
-           // options.UseSqlServer(Configuration.GetConnectionString("WuzzyBearContext")));
+           services.AddDbContext<WuzzyBearContext>(options =>
+            options.UseSqlServer(Configuration.GetConnectionString("WuzzyBearContext")));
             services.AddRazorPages();
         }
 
