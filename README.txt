@@ -135,3 +135,5 @@ Showed the following Warning -- An operation was scaffolded that may result in t
 Updated the Database with command -- Update-Database -Context ApplicationDbContext
 Started the application again.....Everything went well but the data I updated in SeedData.cs did not show.
 Closing the application and starting it again....
+Built the application again and updated the database... ran the app and now it has the data I manually added in SeedData.cs
+Completed Part 8 of Application....Ended at 06:09pm

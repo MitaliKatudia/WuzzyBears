@@ -130,7 +130,8 @@ namespace WuzzyBears.Models
                         MaterialOfTeddy = "Soft Foam",
                         Manufactured = DateTime.Parse("2022-1-27"),
                         SizeOfTeddy = 9,
-                        CostOfTeddy = 2.99M
+                        CostOfTeddy = 2.99M,
+                        CustomerRating = 3
                     },
 
                     new WuzzyBear
