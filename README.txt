@@ -6,7 +6,7 @@ Used Individual Accounts for accessibility
 Added a README file 
 Changed the Views/Home/Index.cshtml file to display 'Welcome to Wuzzy Bears Company' instead of Welcome.
 Had a look at the packages installed.... 
-Updated some of the packages packages according to th requirement
+Updated some of the packages packages according to the requirement
 Did not have Microsoft.VisualStudio.Web.CoreGeneration.Design package.
 Installed the new package from Project/Manage NuGet Packages
 Created a Git Repository named WuzzyBears
@@ -137,3 +137,9 @@ Started the application again.....Everything went well but the data I updated in
 Closing the application and starting it again....
 Built the application again and updated the database... ran the app and now it has the data I manually added in SeedData.cs
 Completed Part 8 of Application....Ended at 06:09pm
+
+Started Part 9 of Application - Adding Validation, 08:25pm
+Added validation I felt appropriate for my properties....
+Ran the application and tried to create false data to check validations... works good
+Examined some methods in files...
+Completed Adding Validation, Completed Microsoft Tutorial...10:00pm
