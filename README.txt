@@ -143,3 +143,10 @@ Added validation I felt appropriate for my properties....
 Ran the application and tried to create false data to check validations... works good
 Examined some methods in files...
 Completed Adding Validation, Completed Microsoft Tutorial...10:00pm
+
+---------------------------------------------------------------------------------------------
+2022-10-13, 11:30pm
+
+In the _Layout.cshtml, inside foot added a small code to show current date and time when the application is runned... @DateTme.Now
+Created a new View in Home called AboutUs.cs and added the new View in HomeController.cs
+Added an 'About Us' link in _Layout.cshtml.....
