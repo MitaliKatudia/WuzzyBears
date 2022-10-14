@@ -27,7 +27,7 @@ a {
 /* Sticky footer styles
 -------------------------------------------------- */
 html {
-  font-size: 14px;
+    font-size: 14px;
 }
 @media (min-width: 768px) {
   html {
@@ -54,13 +54,16 @@ button.accept-policy {
 /* Sticky footer styles
 -------------------------------------------------- */
 html {
-  position: relative;
-  min-height: 100%;
+    position: relative;
+    min-height: 100%;
+    background-color: #f3b6f8;
 }
 
 body {
-  /* Margin bottom by footer height */
-  margin-bottom: 60px;
+    /* Margin bottom by footer height */
+    margin-bottom: 60px;
+    background-color: #f3b6f8;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 .footer {
   position: absolute;
@@ -68,4 +71,45 @@ body {
   width: 100%;
   white-space: nowrap;
   line-height: 60px; /* Vertically center the text there */
+}
+
+/* Css for Images */
+
+.rowImg {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+.columnImg {
+    flex: 25%;
+    max-width: 35%;
+    padding: 0 5px;
+}
+
+.columnImg img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+    border: 3px solid black;
+    margin-left: 130px;
+    position: relative;
+    transition: height 3s, width 3s, transform 3s;
+    transition-timing-function: cubic-bezier(0.0, 0.0, 1.0, 1.0);
+    transition: 3s;
+}
+
+h2 {
+    text-align: center;
+    
+    font-size: 40px;
+}
+
+h3 {
+    color: #575656;
+    font-style: italic;
+}
+
+p {
+    color: #352938;
 }

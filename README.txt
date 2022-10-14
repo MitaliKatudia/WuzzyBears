@@ -150,3 +150,10 @@ Completed Adding Validation, Completed Microsoft Tutorial...10:00pm
 In the _Layout.cshtml, inside foot added a small code to show current date and time when the application is runned... @DateTme.Now
 Created a new View in Home called AboutUs.cs and added the new View in HomeController.cs
 Added an 'About Us' link in _Layout.cshtml.....
+Added content about introduction, headquaters, employees and product description.
+Added Images folder in wwwroot with images
+Coded a flex wrap content to show in the page... code from one of my previous assignments in Semester 3
+I dont know why but some thing is not working out and the images are not shown as I prefer.... will try something else
+After some sweating struggle it is good.... AboutUs Content is now ready.
+Changed css styles as per my preferences and the website looks presentable....
+Will do the final touching tomorrow....Lets get some sleep.....Ended at 02:40am
