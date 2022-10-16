@@ -157,3 +157,8 @@ I dont know why but some thing is not working out and the images are not shown a
 After some sweating struggle it is good.... AboutUs Content is now ready.
 Changed css styles as per my preferences and the website looks presentable....
 Will do the final touching tomorrow....Lets get some sleep.....Ended at 02:40am
+
+---------------------------------------------------------------------------------------------
+2022-10-16, 04:40pm
+Did some css changes....added a photo in company's home page....
+Doing final touches to the application
