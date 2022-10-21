@@ -164,3 +164,10 @@ Did some css changes....added a photo in company's home page....
 Doing final touches to the application
 By the way, all images are from my home.... so no copyright issues....hahahaha
 Commited the Final Assignment Changes.... Now moving forward with publishing the eb App to Azure
+
+---------------------------------------------------------------------------------------------
+2022-10-21, 12:24pm
+Earlier had some issues with publishing the application on azure....sent Andrew an email about it....
+Its working now and published my Application successfully. 
+Visit Link: https://wuzzybears.azurewebsites.net/ to see the Wuzzy Bears Company Application
+Had fun creating the Application.....Thank You
